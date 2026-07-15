@@ -34,8 +34,8 @@ The company operates on multi-channel sales without a centralized system, making
 
 ```mermaid
 graph TD
-    A[oltpdata.csv] -->|Bash Script / Ingestion| B[(MySQL OLTP)]
-    B -->|Backup: datadump.sh| C[sales_data.sql]
-    C -->|Python / ETL Pipeline| D[Data Cleaning & Transformation]
-    D -->|Loading| E[(PostgreSQL Data Warehouse)]
-    E -->|Analytics Querying| F[BI Dashboards / Visualization]
+    A["oltpdata.csv"] -->|Bash Script / Ingestion| B["(MySQL OLTP)"]
+    B -->|Backup: datadump.sh| C["sales_data.sql"]
+    C -->|Python / ETL Pipeline| D["Data Cleaning & Transformation"]
+    D -->|Loading| E["(PostgreSQL Data Warehouse)"]
+    E -->|Analytics Querying| F["BI Dashboards / Visualization"]

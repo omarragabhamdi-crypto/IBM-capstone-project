@@ -33,9 +33,11 @@ The company operates on multi-channel sales without a centralized system, making
 ## Architecture
 
 ```mermaid
-graph LR
-    A["📄 oltpdata.csv"] -->|Bash Script / Ingestion| B[("🛢️ MySQL OLTP")]
-    B -->|Backup: datadump.sh| C["💾 sales_data.sql"]
-    C -->|Python / ETL Pipeline| D["⚙️ Data Cleaning & Transformation"]
-    D -->|Loading| E[("🏛️ PostgreSQL Data Warehouse")]
-    E -->|Analytics Querying| F["📊 BI Dashboards / Visualization"]
+| Project Directory | Description | Technologies Used | Status |
+| :--- | :--- | :--- | :--- |
+| **[IBM-Capstone](./IBM-Capstone)** | End-to-end e-commerce pipeline from MySQL OLTP ingestion to PostgreSQL. | MySQL, Python, Bash, PostgreSQL | 🔄 In Progress |
+| **[ETL-Pipeline](./ETL-Pipeline)** | Custom ETL templates and production-grade data validation pipelines. | Python, Pandas | ⏳ Planning |
+| **[Data-Warehouse-Project](./Data-Warehouse-Project)** | Dimensional modeling (Star/Snowflake Schema) and OLAP design. | SQL, PostgreSQL | ⏳ Planning |
+| **[SQL-Projects](./SQL-Projects)** | Advanced analytics queries, window functions, and database optimizations. | SQL (PostgreSQL/MySQL) | ⏳ Planning |
+| **[Spark-Projects](./Spark-Projects)** | Large-scale batch and stream processing examples. | PySpark, Apache Spark | ⏳ Planning |
+| **[Airflow-Projects](./Airflow-Projects)** | DAGs orchestration, monitoring, and error handling configurations. | Apache Airflow, Python | ⏳ Planning |

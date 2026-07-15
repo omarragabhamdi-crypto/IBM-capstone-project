@@ -33,13 +33,9 @@ The company operates on multi-channel sales without a centralized system, making
 ## Architecture
 
 ```mermaid
-Data-Engineering-Portfolio/
-│
-├── 📂 IBM-Capstone/              # End-to-end e-commerce pipeline (MySQL, Bash, PostgreSQL)
-├── 📂 Data-Warehouse-Project/    # Dimensional modeling, Star/Snowflake Schema, & OLAP design
-├── 📂 ETL-Pipeline/             # Custom ETL templates and data validation pipelines
-├── 📂 SQL-Projects/             # Advanced queries, window functions, and optimizations
-├── 📂 Spark-Projects/           # Large-scale batch and stream processing examples
-├── 📂 Airflow-Projects/         # Workflow orchestration, DAGs, and monitoring configurations
-└── 📝 README.md                 # Portfolio landing page and guide
-
+graph TD
+    A["oltpdata.csv"] -->|Bash Script / Ingestion| B["(MySQL OLTP)"]
+    B -->|Backup: datadump.sh| C["sales_data.sql"]
+    C -->|Python / ETL Pipeline| D["Data Cleaning & Transformation"]
+    D -->|Loading| E["(PostgreSQL Data Warehouse)"]
+    E -->|Analytics Querying| F["BI Dashboards / Visualization"]

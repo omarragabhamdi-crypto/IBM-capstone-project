@@ -39,3 +39,23 @@ graph LR
     C -->|Python / ETL Pipeline| D["⚙️ Data Cleaning & Transformation"]
     D -->|Loading| E[("🏛️ PostgreSQL Data Warehouse")]
     E -->|Analytics Querying| F["📊 BI Dashboards / Visualization"]
+
+## Module: Data Analytics & Dashboards (Google Looker Studio)
+
+In this module, I designed a reporting dashboard to reflect key business metrics using Google Looker Studio.
+
+### 1. Data Ingestion & Initial Verification
+Loaded the dataset and verified the first 10 rows:
+![First 10 Rows](Task2_First_10_Rows.png)
+
+### 2. Quarterly Sales of Mobile Phones
+Created a column chart showing the quarterly sales filtered specifically for mobile devices:
+![Quarterly Mobile Sales](Task4_Quarterly_Mobile_Sales.png)
+
+### 3. Category-wise Sales
+Designed a pie chart displaying the distribution of sales across different product lines:
+![Category-wise Sales](Task5_Category_Wise_Sales.png)
+
+### 4. Month-wise Total Sales
+Developed a line chart to track monthly sales performance over a specific year:
+![Month-wise Sales](Task6_Month_Wise_Total_Sales.png)

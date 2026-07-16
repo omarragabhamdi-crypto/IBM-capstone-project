@@ -40,6 +40,7 @@ graph LR
     D -->|Loading| E[("🏛️ PostgreSQL Data Warehouse")]
     E -->|Analytics Querying| F["📊 BI Dashboards / Visualization"]
 
+
 ## Module: Data Analytics & Dashboards (Google Looker Studio)
 
 In this module, I designed a reporting dashboard to reflect key business metrics using Google Looker Studio.
@@ -59,12 +60,3 @@ Designed a pie chart displaying the distribution of sales across different produ
 ### 4. Month-wise Total Sales
 Developed a line chart to track monthly sales performance over a specific year:
 ![Month-wise Sales](Task6_Month_Wise_Total_Sales.png)
-## Architecture
-
-```mermaid
-graph LR
-    A["📄 oltpdata.csv"] -->|Bash Script / Ingestion| B[("🛢️ MySQL OLTP")]
-    B -->|Backup: datadump.sh| C["💾 sales_data.sql"]
-    C -->|Python / ETL Pipeline| D["⚙️ Data Cleaning & Transformation"]
-    D -->|Loading| E[("🏛️ PostgreSQL Data Warehouse")]
-    E -->|Analytics Querying| F["📊 BI Dashboards / Visualization"]

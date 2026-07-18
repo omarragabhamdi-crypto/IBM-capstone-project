@@ -1,0 +1,6 @@
+*.log
+*.txt
+*.tar.gz
+logs/
+airflow.db
+airflow.cfg

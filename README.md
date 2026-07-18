@@ -39,3 +39,15 @@ graph LR
     C -->|Python / ETL Pipeline| D["⚙️ Data Cleaning & Transformation"]
     D -->|Loading| E[("🏛️ PostgreSQL Data Warehouse")]
     E -->|Analytics Querying| F["📊 BI Dashboards / Visualization"]
+---
+```mermaid
+## 🔀 Component: Web Log Processing Pipeline (Apache Airflow)
+
+An automated, robust Data Engineering pipeline orchestrated with **Apache Airflow** to extract, transform, and load web server access logs.
+
+### 🏗️ Pipeline Architecture & Workflow
+The pipeline utilizes Apache Airflow's orchestration capabilities to execute sequential tasks using the `BashOperator`.
+
+```text
+  [ Raw Access Log ] ──► [ extract_data (cut) ] ──► [ transform_data (grep) ] ──► [ load_data (tar) ] ──► [ Ready Archive ]
+```

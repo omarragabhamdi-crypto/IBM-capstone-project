@@ -4,3 +4,7 @@
 logs/
 airflow.db
 airflow.cfg
+
+# Spark ML artifacts
+spark_ml/*.model/
+spark_ml/.ipynb_checkpoints/

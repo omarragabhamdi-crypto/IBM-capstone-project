@@ -265,7 +265,24 @@ Benefits include:
 - Separation from transactional workloads
 
 ---
+---
 
+## 🤖 Component: Machine Learning Pipeline (PySpark ML)
+
+A scalable Machine Learning pipeline built using **PySpark** to predict target metrics as part of the data processing ecosystem.
+
+### 📊 Pipeline Features
+* **Data Ingestion:** Loads and processes large-scale datasets using PySpark DataFrame API.
+* **Feature Engineering:** Vectorizes feature columns using `VectorAssembler` and normalizes them with `StandardScaler`.
+* **Model Training:** Implements a `LinearRegression` model optimized for continuous numerical predictions.
+* **Evaluation:** Measures model performance utilizing metrics like Root Mean Squared Error ($RMSE$) and R-squared ($R^2$).
+
+### 📁 Structure
+```text
+IBM-capstone-project/
+└── spark_ml/
+    └── spark_ml_pipeline.py    # The core PySpark ML script
+---
 # 📊 Business Analytics
 
 The Data Warehouse enables business users to analyze:
@@ -382,6 +399,7 @@ Coming Soon
 - SQL Queries
 - Dashboard
 - Terminal Output
+
 
 ---
 
